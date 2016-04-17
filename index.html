@@ -51,14 +51,20 @@
   </section>
 
   <section><!-- form section -->
-    <h2>Reserve your seat:</h2>
+    <!--<h2>Reserve your seat:</h2>-->
     <p>
       <!--No idea what info is needed for the form so this will probably need to be changed. Also it is supposed to appear when a seat is clicked on.-->
       <form action="" method="post">
-        <p>Name: <input type="text" name="name" /></p>
-        <p>Phone number: <input type="text" name="phone" /></p>
-        <p>Email: <input type="text" name="email" /></p>
-        <p><input type="submit" name="submit" value="Reserve" /></p>
+        <fieldset>
+          <legend>Reserve your seat:</legend>
+          <label class = "name">Name:<br />
+          <input type: ="text" name="name" /></label><br />
+          <label class = "phone_number">Phone Number:<br />
+          <input type: ="text" name="phone" /></label><br />
+          <label class = "email">Email:<br />
+          <input type: ="text" name="email" /></label><br />
+          <input type="submit" name="submit" value="Reserve" />
+        </fieldset>
       </form>
     </p>
   </section>
