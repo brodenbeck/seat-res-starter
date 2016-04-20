@@ -1,6 +1,12 @@
 header h1 {
   display: inline-block;
   margin-left: 5%;
+  font-family: 'Special Elite', cursive, sans serif;
+  font-size: 400%;
+}
+
+body {
+  background-color: #bed7c7;
 }
 
 .stage {
@@ -30,6 +36,10 @@ h3 {
   margin: auto;
   min-height: 100px;
   display: inline-block;
+}
+
+.available:hover {
+  background-color: #436631;
 }
 
 .reserved {
