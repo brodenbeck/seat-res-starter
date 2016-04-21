@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Seat Reservation App</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title>Seat Reservation App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 </head>
 
 <body class="container">
-  <header>
-    <img src="images/The-Lab-logo.png" alt="logo" class="logo">
-    <h1>The Lab Theatre</h1>
-  </header>
-  <p>Welcome it to the Lab movie theatre. To reserve you seat in advance, click on the seat you would like and fill out the for below. Thank you fo choosing out theatre.</p>
+
+	<header>
+		<img src="images/The-Lab-logo.png" alt="logo" class="logo">
+		<h1>The Lab Theatre</h1>
+	</header>
+
+  <p>Welcome it to the Lab movie theatre. To reserve you seat in advance, click on the seat you would like and fill out the form below. Thank you for choosing our theatre.</p>
+
   <div class="all">
+    
     <div class="stage">
-      <h3>Stage</h3>
+      <h3>STAGE</h3>
     </div>
 
     <section class="seat-chart">
       <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
+      
+      <!-- first row-->
       <div class="reserved"></div>
       <div class="available"></div>
       <div class="reserved"></div>
       <div class="available"></div>
-      <div class="reserved"></div>
-      <div class="available"></div> 
-      <!--First Row-->
-      <div class="reserved"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <!--Second Row-->
+
+      <!-- second row -->
       <div class="reserved"></div>
       <div class="available"></div>
+      <div class="reserved"></div>
+      <div class="available"></div>
+      
+      <!-- third row -->
       <div class="available"></div>
       <div class="available"></div>
       <div class="available"></div>
       <div class="available"></div>
-      <!--Third Row-->
+      
+      <!-- fourth row -->
+      <div class="reserved"></div>
+      <div class="available"></div>
+      <div class="available"></div>
+      <div class="available"></div>
+
+      <!-- fifth row -->
       <div class="available"></div>
       <div class="available"></div>
       <div class="available"></div>
       <div class="available"></div>
+
+      <!-- sixth row -->
       <div class="available"></div>
       <div class="available"></div>
-      <!--Fourth Row-->
+      <div class="available"></div>
+      <div class="available"></div>
+     
     </section>
   </div>
+
   <section><!-- form section -->
-    <!--<h2>Reserve your seat:</h2>-->
-    <p>
-      <!--No idea what info is needed for the form so this will probably need to be changed. Also it is supposed to appear when a seat is clicked on.-->
+    
       <form action="" method="post">
         <fieldset>
           <legend>Reserve your seat:</legend>
@@ -67,9 +79,10 @@
           <input type="submit" name="submit" value="Reserve" />
         </fieldset>
       </form>
-    </p>
+
   </section>
-  <div id ="footer">123 Ave, Detroit MI, 313-000-9999, Theater.com</div>
+
+  <footer id ="footer">123 Ave, Detroit MI, 313-000-9999, Theater.com</footer>
 
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="app.js"></script>

@@ -1,7 +1,7 @@
 header h1 {
   display: inline-block;
   margin-left: 5%;
-  font-family: 'Special Elite', cursive, sans serif;
+  font-family: 'Special Elite', 'serif';
   font-size: 400%;
 }
 
@@ -58,11 +58,14 @@ div {
   border-radius: 25px;
 }
 
-/* doesn't work yet */ 
-@media (max-width: 716px;) {
-  img .logo {
-    display: none;
+@media (max-width: 716px) {
+  .logo {
+  	display: none;
     visibility: hidden;
+  }
+
+  h1 {
+  	text-align: center;
   }
 }
 
@@ -71,4 +74,5 @@ div {
     position: relative;
     height: 3em;
     text-align: center;
+    padding-top: 10px;
 }
