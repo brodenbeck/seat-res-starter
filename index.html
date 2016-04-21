@@ -20,71 +20,78 @@
   <div class="all">
     
     <div class="stage">
-      <h3>STAGE</h3>
-    </div>
+    	<h3>STAGE</h3>
+    </div><!-- ends stage div -->
 
     <section class="seat-chart">
       <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
       
-      <!-- first row-->
-      <div class="reserved"></div>
-      <div class="available"></div>
-      <div class="reserved"></div>
-      <div class="available"></div>
+      	<!-- first row-->
+		<div class="reserved"></div>
+		<div class="available"></div>
+		<div class="reserved"></div>
+		<div class="available"></div>
 
-      <!-- second row -->
-      <div class="reserved"></div>
-      <div class="available"></div>
-      <div class="reserved"></div>
-      <div class="available"></div>
-      
-      <!-- third row -->
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      
-      <!-- fourth row -->
-      <div class="reserved"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
+		<!-- second row -->
+		<div class="reserved"></div>
+		<div class="available"></div>
+		<div class="reserved"></div>
+		<div class="available"></div>
 
-      <!-- fifth row -->
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
+		<!-- third row -->
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
 
-      <!-- sixth row -->
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
-      <div class="available"></div>
+		<!-- fourth row -->
+		<div class="reserved"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+
+		<!-- fifth row -->
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+
+		<!-- sixth row -->
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
+		<div class="available"></div>
      
-    </section>
-  </div>
+    </section><!-- ends section of seats -->
+  </div><!-- ends class="all" div -->
 
-  <section><!-- form section -->
+	<section><!-- form section -->
     
-      <form action="" method="post">
-        <fieldset>
-          <legend>Reserve your seat:</legend>
-          <label class = "name">Name:
-          <input type: ="text" name="name" /></label>
-          <label class = "phone_number">Phone Number:
-          <input type: ="text" name="phone" /></label>
-          <label class = "email">Email:
-          <input type: ="text" name="email" /></label>
-          <input type="submit" name="submit" value="Reserve" />
-        </fieldset>
-      </form>
+    	<form action="" method="post">
+			<legend>Reserve your seat:</legend>
 
-  </section>
+			<label class = "name">Name:
+				<input type: ="text" name="name" />
+			</label>
 
-  <footer id ="footer">123 Ave, Detroit MI, 313-000-9999, Theater.com</footer>
+			<label class = "phone_number">Phone Number:
+				<input type: ="text" name="phone" />
+			</label>
 
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+			<label class = "email">Email:
+				<input type: ="text" name="email" />
+			</label>
+
+			<input type="submit" name="submit" value="Reserve" />
+    	</form>
+
+	</section><!-- ends form section -->
+
+	<footer id ="footer">
+		<p>123 Ave, Detroit MI, 313-000-9999, Theater.com</p>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
