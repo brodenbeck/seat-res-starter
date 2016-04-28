@@ -32,7 +32,7 @@ $(function() {
 		$(selectedSeat).css("background-color" , "#909090");
 		$(selectedSeat).unwrap();
 		$(selectedSeat).html("<p id = 'reservedSeat'></p>");
-		$("#reservedSeat").text(name + ', ' + phone + ', ' + email);
+		$("#reservedSeat").text("seat #" + seatNumber + " " + name);
 	});
 
 });
