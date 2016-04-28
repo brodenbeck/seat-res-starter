@@ -1,10 +1,12 @@
 $(function() {
 
 	var seatNumber;
+	var selectedSeat;
 
 	$("form").hide();
 	$(".available").on("click", function() {
 		$("form").show();
+		selectedSeat = $(this);
 		seatNumber = $(this).attr("id");
 		$(".yourSeat").text("seat #" + seatNumber + ":");
 
@@ -25,7 +27,12 @@ $(function() {
 		reservation.phone = phone;
 		reservation.email = email;
 
-		$("#formArea").html("<p>Thank you for your reservation!</p>")
+		$("#formArea").html("<p>Thank you for your reservation!</p>");
+
+		$(selectedSeat).css("background-color" , "#909090");
+		$(selectedSeat).unwrap();
+		$(selectedSeat).html("<p id = 'reservedSeat'></p>");
+		$("#reservedSeat").text(name + ', ' + phone + ', ' + email);
 	});
 
 });
