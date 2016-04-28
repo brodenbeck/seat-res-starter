@@ -54,8 +54,18 @@ h3 {
   max-width: 30%;
 }
 
+.smallSize {
+  font-size: 1.5em;
+}
+
 div {
   border-radius: 25px;
+}
+
+p {
+  font-size: 2em;
+  margin: 5px;
+  text-align: center;
 }
 
 @media (max-width: 716px) {
@@ -75,4 +85,5 @@ div {
     height: 3em;
     text-align: center;
     padding-top: 10px;
+    font-size: 0.5em;
 }

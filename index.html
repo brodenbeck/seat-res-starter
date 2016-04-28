@@ -15,7 +15,7 @@
 		<h1>The Lab Theatre</h1>
 	</header>
 
-  <p>Welcome it to the Lab movie theatre. To reserve you seat in advance, click on the seat you would like and fill out the form below. Thank you for choosing our theatre.</p>
+  <p class="smallSize">Welcome it to the Lab movie theatre. To reserve you seat in advance, click on the seat you would like and fill out the form below. Thank you for choosing our theatre.</p>
 
   <div class="all">
     
@@ -27,62 +27,62 @@
       <!-- This section will contain seats with one of two classes. Eventually, the divs will be generated with JavaScript! Keep this in mind when making decisions about the layout. -->
       
       	<!-- first row-->
-		<div class="reserved" id="seat1"></div>
-		<a href="index.html#form"><div class="available" id="seat2"></div></a>
-		<div class="reserved" id="seat3"></div>
-		<a href="index.html#form"><div class="available" id="seat4"></div></a>
+		<div class="reserved" id="I"></div>
+		<a href="index.html#form"><div class="available" id="II"></div></a>
+		<div class="reserved" id="III"></div>
+		<a href="index.html#form"><div class="available" id="IV"></div></a>
 
 		<!-- second row -->
-		<div class="reserved" id="seat5"></div>
-		<a href="index.html#form"><div class="available" id="seat6"></div></a>
-		<div class="reserved" id="seat7"></div>
-		<a href="index.html#form"><div class="available" id="seat8"></div></a>
+		<div class="reserved" id="V"></div>
+		<a href="index.html#form"><div class="available" id="VI"></div></a>
+		<div class="reserved" id="VII"></div>
+		<a href="index.html#form"><div class="available" id="VIII"></div></a>
 
 		<!-- third row -->
-		<a href="index.html#form"><div class="available" id="seat9"></div></a>
-		<a href="index.html#form"><div class="available" id="seat10"></div></a>
-		<a href="index.html#form"><div class="available" id="seat11"></div></a>
-		<a href="index.html#form"><div class="available" id="seat12"></div></a>
+		<a href="index.html#form"><div class="available" id="IX"></div></a>
+		<a href="index.html#form"><div class="available" id="X"></div></a>
+		<a href="index.html#form"><div class="available" id="XI"></div></a>
+		<a href="index.html#form"><div class="available" id="XII"></div></a>
 
 		<!-- fourth row -->
-		<div class="reserved" id="seat13"></div>
-		<a href="index.html#form"><div class="available" id="seat14"></div></a>
-		<a href="index.html#form"><div class="available" id="seat15"></div></a>
-		<a href="index.html#form"><div class="available" id="seat16"></div></a>
+		<div class="reserved" id="XIII"></div>
+		<a href="index.html#form"><div class="available" id="XIV"></div></a>
+		<a href="index.html#form"><div class="available" id="XV"></div></a>
+		<a href="index.html#form"><div class="available" id="XVI"></div></a>
 
 		<!-- fifth row -->
-		<a href="index.html#form"><div class="available" id="seat17"></div></a>
-		<a href="index.html#form"><div class="available" id="seat18"></div></a>
-		<a href="index.html#form"><div class="available" id="seat19"></div></a>
-		<a href="index.html#form"><div class="available" id="seat20"></div></a>
+		<a href="index.html#form"><div class="available" id="XVII"></div></a>
+		<a href="index.html#form"><div class="available" id="XVIII"></div></a>
+		<a href="index.html#form"><div class="available" id="XIX"></div></a>
+		<a href="index.html#form"><div class="available" id="XX"></div></a>
 
 		<!-- sixth row -->
-		<a href="index.html#form"><div class="available" id="seat21"></div></a>
-		<a href="index.html#form"><div class="available" id="seat22"></div></a>
-		<a href="index.html#form"><div class="available" id="seat23"></div></a>
-		<a href="index.html#form"><div class="available" id="seat24"></div></a>
+		<a href="index.html#form"><div class="available" id="XI"></div></a>
+		<a href="index.html#form"><div class="available" id="XII"></div></a>
+		<a href="index.html#form"><div class="available" id="XIII"></div></a>
+		<a href="index.html#form"><div class="available" id="XIV"></div></a>
      
     </section><!-- ends section of seats -->
   </div><!-- ends class="all" div -->
 
-	<section><!-- form section -->
+	<section id="formArea"><!-- form section -->
     
     	<form id="form" action="" method="post">
-			<legend>Reserve your seat:</legend>
+			<legend>Reserve <span class="yourSeat">your seat:</span></legend>
 
-			<label class = "name">Name:
-				<input type: ="text" name="name" />
+			<label>Name:
+				<input type: ="text" name="name" id="name" />
 			</label>
 
-			<label class = "phone_number">Phone Number:
-				<input type: ="text" name="phone" />
+			<label>Phone Number:
+				<input id="phone_number" type: ="text" name="phone" />
 			</label>
 
-			<label class = "email">Email:
-				<input type: ="text" name="email" />
+			<label>Email:
+				<input id="email" type: ="text" name="email" />
 			</label>
 
-			<input type="submit" name="submit" value="Reserve" />
+			<input id="button" type="button" name="button" value="Reserve" />
     	</form>
 
 	</section><!-- ends form section -->
