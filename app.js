@@ -1,1 +1,9 @@
-console.log("Hello, World!");
+$(function() {
+
+	$("form").hide();
+	$(".available").on("click", function() {
+		$("form").show();
+	});
+
+
+});
