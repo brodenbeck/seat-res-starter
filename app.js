@@ -17,22 +17,18 @@ $(function() {
 	};
 
 	$("#button").on("click", function() {
-		var name = $("#name").val();
-		var phone = $("#phone_number").val();
-		var email = $("#email").val();
-		var yourSeat = $(".yourSeat").text();
-
-		reservation.seat = yourSeat;
-		reservation.name = name;
-		reservation.phone = phone;
-		reservation.email = email;
+		reservation.name = $("#name").val();
+		reservation.phone = $("#phone_number").val();
+		reservation.email = $("#email").val();
+		reservation.yourSeat = $(".yourSeat").text();
 
 		$("#formArea").html("<p>Thank you for your reservation!</p>");
 
-		$(selectedSeat).css("background-color" , "#909090");
-		$(selectedSeat).unwrap();
-		$(selectedSeat).html("<p id = 'reservedSeat'></p>");
-		$("#reservedSeat").text("seat #" + seatNumber + " " + name);
+		$(selectedSeat).css("background-color" , "#909090")
+			.unwrap()
+			.html("<p id = 'reservedSeat'></p>");
+
+		$("#reservedSeat").text("seat #" + seatNumber + " " + reservation.name);
 	});
 
 });
