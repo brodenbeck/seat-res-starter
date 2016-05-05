@@ -1,0 +1,95 @@
+header h1 {
+  display: inline-block;
+  margin-left: 5%;
+  font-family: 'Special Elite', serif;
+  font-size: 400%;
+}
+
+body {
+  background-color: #bed7c7;
+}
+
+.stage {
+  position: relative; 
+  width: 90%;
+  left: 5%;
+  margin: 10px auto;
+  min-height: 100px;
+  background-color: #d3d3d3;
+  display: inline-block;
+  background-image: url("images/halftone.png");
+}
+
+h3 {
+  text-align: center;
+  margin: 35px auto;
+}
+
+.seat-chart {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.available {
+  background-color: #609247;
+  width: 24%;
+  margin: 5px auto;
+  height: 100px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  position: relative;
+  top: 0px;
+}
+
+.available:hover {
+  background-color: #436631;
+}
+
+.reserved {
+  background-color: #909090;
+  width: 24%;
+  margin: 5px auto;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+}
+
+.logo {
+  max-width: 30%;
+}
+
+.smallSize {
+  font-size: 1.5em;
+}
+
+div {
+  border-radius: 25px;
+  vertical-align: top;
+}
+
+p {
+  font-size: 2em;
+  margin: 5px;
+  text-align: center;
+}
+
+@media (max-width: 716px) {
+  .logo {
+  	display: none;
+    visibility: hidden;
+  }
+
+  h1 {
+  	text-align: center;
+  }
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    height: 3em;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.5em;
+}
